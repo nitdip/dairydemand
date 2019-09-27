@@ -5,10 +5,10 @@
 The data can be obtained from USDA QuickStats and USDA GATS
 
 ## Rising Demand for Butter
-<img src=#>
+<img src="/images/Demand%20MoM%20Plot.png">
 
 ## Positive Net Trade
-<img src=#>
+<img src="./images/Imports%20vs%20Exports.png">
 
 ## Conclusion
 Butter is healthy for both domestic and international markets.
