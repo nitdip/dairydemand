@@ -1,5 +1,7 @@
 # Butter Demand
-## Objective: ETL for USDA QuickStats and GATS. Present insight on butter markets for both domestic and international markets.
+## Objective: 
+* ETL for USDA QuickStats and GATS. 
+* Present insight on butter markets for both domestic and international markets.
 
 ## Data Sources
 The data can be obtained from USDA QuickStats and USDA GATS
