@@ -15,16 +15,19 @@ from USDA import GATS, QuickStats
 product = 'Butter'
 
 import_file = f'imports.csv'
-import_codes = [404105010,
-404105090,
-404109000]
+import_codes = [405002000,
+               405004000,
+               405101000,
+               405102000]
 
 gats_imports = GATS(import_file, kind='imports', codes=import_codes, product=product)
 imports = gats_imports.transform()
 gats_imports.save(f'{path}/{product}/{product}Imports')
 
 export_file = f'exports.csv'
-export_codes = [404104000]
+export_codes = [405005000,
+               405100000,
+               405105000]
 
 gats_exports = GATS(export_file, kind='exports', codes=export_codes, product=product)
 exports = gats_exports.transform()
