@@ -12,7 +12,7 @@ path = os.curdir
 
 from USDA import GATS, QuickStats
 #
-product = 'DryWhey'
+product = 'Butter'
 
 import_file = f'imports.csv'
 import_codes = [404105010,
@@ -30,12 +30,12 @@ gats_exports = GATS(export_file, kind='exports', codes=export_codes, product=pro
 exports = gats_exports.transform()
 gats_exports.save(f'{path}/{product}/{product}Exports')
 
-items = ['HUMAN', 'ANIMAL']
+items = ['BUTTER']
 stock_file = f'{path}/{product}/stock.csv'
 qs_stocks = QuickStats(stock_file, kind='stocks', items=items)
 qs_stocks.save(f'{path}/{product}/{product}Stocks')
 
-data_items = ['Human', 'Animal']
+data_items = ['BUTTER']
 prod_file = f'{path}/{product}/production.csv'
 qs_production = QuickStats(prod_file, kind='production', items=data_items)
 qs_production.save(f'{path}/{product}/{product}Production')
